@@ -17,7 +17,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 5%;
   z-index: 10;
 }
 
@@ -29,6 +28,7 @@ body {
 .brand__logo {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .language__drop__down {
@@ -44,7 +44,7 @@ body {
 .dropdown__container {
   border: 1px solid white;
   padding: 0.4rem;
-  border-radius: 4px;
+  border-radius: 2px;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -53,13 +53,14 @@ body {
   border: 1px solid #dc030f;
   color: white;
   padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .navbar__nav__items {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-right: 45px;
 }
 
 .hero__bg__image__container {
@@ -105,12 +106,13 @@ body {
   font-size: 2rem;
 }
 
-.hero__subtitle,
-.hero__description {
+.hero__subtitle {
   font-weight: 400;
   font-size: 1rem;
 }
-
+.hero__description {
+  font-size: 0.9rem;
+}
 .hero__description {
   margin: 0 50px;
 }
@@ -142,7 +144,8 @@ body {
 .form__container {
   background-color: white;
   width: 90%;
-  height: 50px;
+  height: 70px !important;
+  min-width: 500px;
   position: relative;
 }
 
@@ -171,12 +174,9 @@ body {
 }
 @media (min-width: 768px) {
   .hero__bg__image__container {
-    height: 100vh;
+    height: auto;
   }
 
-  .hero__bg__overlay {
-    height: 100vh;
-  }
   .hero__card {
     top: 40%;
     left: 30%;
@@ -185,27 +185,34 @@ body {
   .hero__title {
     font-size: 3rem;
   }
-  .hero__subtitle,
-  .hero__description {
+  .hero__subtitle {
     font-size: 1.3rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: 1024px) {
   .navbar {
-    padding: 2% 5%;
   }
 
   .navbar__brand {
-    width: 200px;
+    width: 250px;
+    height: 100px;
   }
 
   .signin__button {
-    padding: 10px 20px;
+    padding: 6px 20px;
     font-size: 18px;
+    font-size: 0.9rem;
   }
   .dropdown__container {
-    padding: 10px 5px;
+    padding: 6px 4px;
+    font-size: 0.9rem;
   }
 
   .navbar__nav__items {
@@ -227,6 +234,17 @@ body {
     gap: 1px;
   }
   .primary__button {
-    height: 50px;
+    height: 70px;
+  }
+  .get__started__email .form__container {
+    width: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar__nav__items {
+    margin-right: 20px;
+  }
+  .dropdown__container {
+    padding: 0.2em;
   }
 }
