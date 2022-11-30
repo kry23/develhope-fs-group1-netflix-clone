@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Netflix Light";
+  src: url(./assets/font/NetflixSans-Light.otf);
+}
+@font-face {
+  font-family: "Netflix Medium";
+  src: url(./assets/font/NetflixSans-Medium.otf);
+}
+
+body {
+  font-family: "Netflix Light";
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.faq > h1 {
+  font-family: "Netflix Medium";
+  font-size: 2.5rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-list > div {
+  width: 694px;
+  height: 75px;
+  padding: 0 1.5rem;
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-list > div > p {
+  font-size: 1.5rem;
+}
+
+.faq-list > div > i {
+  font-size: 3rem;
+  font-style: normal;
+}
