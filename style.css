@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Netflix Light";
   src: url(./assets/font/NetflixSans-Light.otf);
@@ -19,20 +25,21 @@ body {
   color: white;
 }
 .faq > h1 {
-  font-family: "Netflix Medium";
-  font-size: 2.5rem;
+  font-family: "Netflix Light";
+  font-size: 3.2rem;
 }
 
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 9px;
+  margin-bottom: 3rem;
 }
 
 .faq-list > div {
-  width: 694px;
-  height: 75px;
-  padding: 0 1.5rem;
+  width: 810px;
+  height: 76px;
+  padding: 0 2rem;
   background-color: #303030;
   display: flex;
   align-items: center;
@@ -40,10 +47,55 @@ body {
 }
 
 .faq-list > div > p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .faq-list > div > i {
   font-size: 3rem;
   font-style: normal;
+}
+.form > input {
+  width: 450px;
+  height: 60px;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.form > input:focus {
+  outline: none;
+}
+
+.form > button {
+  width: 212.96px;
+  height: 60px;
+  font-size: 1.5rem;
+  padding: 5px 0;
+  background-color: #e30613;
+  color: white;
+  border: none;
+}
+
+.form > button:hover {
+  cursor: pointer;
+  background-color: #ff0314;
+}
+
+.form {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+.membership-text {
+  font-size: 19px;
+  text-align: center;
+}
+.call {
+  color: #939393;
+}
+.tel-number > a {
+  text-decoration: none;
+  color: #939393;
+}
+
+footer {
+  background-color: black;
 }
